@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+hk/b6Je9j9zDQS6U15zwIh7jKpzFfJz7xwTJv" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    h2{
+        color:blueviolet;
+        font-size: 36px;
+    }
+    #instructions{
+        margin-bottom: 20px;
+        color: red;
+    }
+    #bushes, #penalty, #chelp{
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        background-color: aqua;
+        color: blue;
+        border:1px solid black;
+        border-radius: 10px;
+    }
+    #help{
+        margin-top: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding:10px;
+        background-color: bisque;
+        color: blue;
+        text-align: left;
+    }
+    .container {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+			gap: 10px;
+			padding: 10px;
+		}
+
+		.search-location {
+			border: 1px solid black;
+			padding: 5px;
+		}
+</style>
+<body>
+   <h2>Find the mouse by  Yaramala Shilpa</h2>
+   <p id="instructions">Click on the bushes to search for the mouse, beware the cat</p> 
+   <p  id="bushes">Number of bushes checked is zero.</p>
+   <p id="penalty">Penalty is zero.</p>
+   <p id="chelp">Click for help.</p>
+   <p id="help">Help report</p>
+
+   <div class="container">
+    <div class="row">
+        <div class="search-location"><img src="bush.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="bush.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="bush.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="bush.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="bush.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="bush.jpg" width="290" height="290"></div>
+    </div>
+    <div class="row">
+        <div class="search-location"><img src="mouse.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="mouse.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="mouse.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="mouse.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="mouse.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="mouse.jpg" width="290" height="290"></div>
+    </div>
+    <div class="row">
+        <div class="search-location"><img src="tiger.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="tiger.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="tiger.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="tiger.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="tiger.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="tiger.jpg" width="290" height="290"></div>
+    </div>
+    <div class="row">
+        <div class="search-location"><img src="grass.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="grass.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="grass.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="grass.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="grass.jpg" width="290" height="290"></div>
+        <div class="search-location"><img src="grass.jpg" width="290" height="290"></div>
+    </div>
+   </div>
+</body>
+</html>
