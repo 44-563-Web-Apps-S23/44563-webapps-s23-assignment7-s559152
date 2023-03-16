@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>react page</title>
+  <title>setTimeout use</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <h2>Speed Check By Yaramala Shilpa</h2>
+  <div id="target"> Your time </div><br>
+
+  <button type="button"
+  class="btn btn-primary"
+  onclick="startTime()">
+  Start Timer</button><br><br>
+
+  <button type="button"
+  class="btn btn-primary"
+  onclick="recordTime()">
+  React</button><br><br>
+
+  <pid="counter"> Count </p>
+
+  <p id="countdown"></p>
+
+  <script> 
+  let reactTime =undefined;
+  function recordTime(){
+    reactTime= Date.now();
+    console.log(reactTime);
+  }
+  let i=0;
+
+  let r=Math.floor((Math.random() * 10) + 2);
+  function startTime(){
+     r=Math.floor((Math.random() * 10) + 2);
+    for( i=0;i<r;i++){
+       console.log(r);
+        setTimeou(i); 
+    }
+  
+  setTimeout( () => {
+        console.log("Entered anononymouse fn");
+         if(reactTime==undefined){
+            console.log("entered if");
+            document.getElementById('target').innerHTML="Too Slow";
+         }
+         else{
+            console.log("entered else");
+            let eT;
+            eT=Date.now();
+            console.log("endtime is"+eT);
+            let t=eT-reactTime;
+            console.log(t);
+            document.getElementById('target').innerHTML="Time was "+t;
+         }
+        },8*1000);
+   
+    } 
+    function setTimeou(i)
+   {
+        setTimeout(()=>{
+                document.getElementById('countdown').innerHTML=i;
+            },(r-i)*1000);
+    }
+  
+  </script>
+
+</body>
+</html>
